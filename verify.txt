@@ -1,3 +1,4 @@
 end
 sh vlan
+sh run int vlan13
 sh run int fa1/0/13
