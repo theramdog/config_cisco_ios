@@ -1,0 +1,17 @@
+vlan 13
+    name test13
+int vlan 13
+    descript test 13
+    no ip redirects
+    no ip unreachables
+    no ip proxy-arp
+    no ip mroute-cache
+    ip addr 13.13.13.13 255.255.255.0
+    no shut
+int fa1/0/13
+    switchport
+    switchport host
+    switchport access vlan 13
+    auto qos trust
+    descript test 13
+    no shut
